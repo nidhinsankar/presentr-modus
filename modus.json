@@ -6,5 +6,23 @@
       "path": "/graphql",
       "auth": "bearer-token"
     }
+  },
+  "connections": {
+    "zenquotes": {
+      "type": "http",
+      "baseUrl": "https://zenquotes.io/"
+    },
+    "rapidapi": {
+      "type": "http",
+      "baseUrl": "https://yt-api.p.rapidapi.com/",
+      "headers": {
+        "x-rapidapi-key": "{{API_KEY}}",
+        "x-rapidapi-host": "yt-api.p.rapidapi.com"
+      }
+    },
+    "placeholder": {
+      "type": "http",
+      "baseUrl": "https://jsonplaceholder.typicode.com/"
+    }
   }
 }
