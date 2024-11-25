@@ -8,7 +8,8 @@ import {
 import { JSON } from "json-as";
 
 // this model name should match the one defined in the modus.json manifest file
-const modelName: string = "text-generator";
+// const modelName: string = "text-generator";
+const modelName: string = "gpt-3-5-turbo";
 
 // Use our LLM to generate text based on an instruction and prompt
 export function generateText(instruction: string, prompt: string): string {

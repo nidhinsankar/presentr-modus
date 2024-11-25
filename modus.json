@@ -12,6 +12,12 @@
       "sourceModel": "meta-llama/Meta-Llama-3.1-8B-Instruct",
       "provider": "hugging-face",
       "connection": "hypermode"
+    },
+    "gpt-3-5-turbo": {
+      "sourceModel": "gpt-3.5-turbo",
+      "path": "v1/chat/completions",
+      "provider": "openai",
+      "connection": "openai"
     }
   },
   "connections": {
@@ -25,6 +31,13 @@
       "headers": {
         "x-rapidapi-key": "{{API_KEY}}",
         "x-rapidapi-host": "yt-api.p.rapidapi.com"
+      }
+    },
+    "openai": {
+      "type": "http",
+      "baseUrl": "https://api.openai.com/",
+      "headers": {
+        "Authorization": "Bearer {{OPENAI_KEY}}"
       }
     },
     "placeholder": {
