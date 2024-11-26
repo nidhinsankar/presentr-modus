@@ -51,8 +51,8 @@ export function cleanTranscript(data: string): string {
   return result;
 }
 
-export function convertTextToArray(text: string): string {
-  const slideCount = 5;
+export function convertTextToArray(text: string, slideCount: string): string {
+  // const slideCount = 5;
   const instruction =
     "Output only a clean array of objects(JSON) like  [{title: 'Title', content: ['Point 1', 'Point 2']}]. DO NOT use any newlines (\\n) or escape characters (/). Don't give the unwanted explaination like(here is the content,the generated content";
   const requestBody = `From the string ${text}, create an array of objects with a title and content property. The content property should be an array of strings. The array should have ${slideCount} objects.
